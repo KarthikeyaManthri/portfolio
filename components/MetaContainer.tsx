@@ -28,11 +28,11 @@ export default function MetaContainer(props: MetaContainerProps) {
         <meta content={meta.description} name="description" />
         <meta
           property="og:url"
-          content={`https://www.karthikeya.vercel.app${router.asPath}`}
+          content={`https://karthikeyamanthri.pages.dev${router.asPath}`}
         />
         <link
           rel="canonical"
-          href={`https://www.karthikeya.vercel.app${router.asPath}`}
+          href={`https://karthikeyamanthri.pages.dev${router.asPath}`}
         />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="karthikeya Manthri" />
