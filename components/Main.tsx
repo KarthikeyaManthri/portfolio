@@ -1,6 +1,8 @@
 import { RoughNotationGroup } from "react-rough-notation";
 import { HighLighter } from "./Highlighter";
 import { useTheme } from "next-themes";
+import avatarPic from "../public/avatar.png";
+import Image from "next/image";
 
 const Main = () => {
   const { theme } = useTheme();
@@ -8,9 +10,10 @@ const Main = () => {
     <div className="container px-4 mx-aut items-center">
       <div className="lg:space-x-5 lg:flex lg:flex-row item-center lg:-mx-4 flex flex-col text-center lg:text-left">
         <div className="flex-shrink-0 lg:mt-12 lg:px-4 mb-10 self-center sm:self-center md:self-center lg:self-start xl:self-start 2xl:self-start">
-          <img
-            src="/avatar.png"
+          <Image
+            src={avatarPic}
             alt="Profile"
+            priority={true}
             className="rounded-full"
             width={200}
             height={200}
