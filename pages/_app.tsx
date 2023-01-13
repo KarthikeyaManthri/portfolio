@@ -6,11 +6,7 @@ import MetaContainer from "@components/MetaContainer";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <ThemeProvider
-        defaultTheme="system"
-        attribute="class"
-        enableSystem={true}
-      >
+      <ThemeProvider attribute="class" enableSystem={true}>
         <MetaContainer>
           <Component {...pageProps} />
         </MetaContainer>

@@ -3,7 +3,7 @@ import { HighLighter } from "./Highlighter";
 import { useTheme } from "next-themes";
 
 const Main = () => {
-  const { theme } = useTheme();
+  const { resolvedTheme: theme } = useTheme();
   return (
     <div className="container px-4 mx-aut items-center">
       <div className="lg:space-x-5 lg:flex lg:flex-row item-center lg:-mx-4 flex flex-col text-center lg:text-left">
